@@ -1,0 +1,7 @@
+filePath = "./game_recorders/game_recorders.h5"   
+games = HDF5(filePath,mode = 'r')                 
+type = 'pd_dense'                                 
+model = DenseModel( dataGenerator = games. yeilds_data, boardSize = 9, dataSize = 1024 * 100,model = type)    
+————————————————
+版权声明：本文为CSDN博主「TiAmo zhang」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/qq_41640218/article/details/132034310
