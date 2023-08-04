@@ -1,0 +1,21 @@
+int main()
+{
+	int input = 0;
+	srand((unsigned int)time(NULL));
+	do
+	{
+		menu();
+		printf("choose:>");
+		scanf("%d", &input);
+		switch (input)
+		{
+		case 1:system("cls"); game();
+			break;
+		case 0:printf("\n");
+			break;
+		default:printf("wrong！\n");
+			break;
+		}
+	} while (input);
+	return 0;
+}
