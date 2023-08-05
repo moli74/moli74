@@ -1,0 +1,4 @@
+ List<Integer> skippedList = numbers.stream()
+                .skip(3)
+                .collect(Collectors.toList());
+        System.out.println("Skipped List: " + skippedList);
