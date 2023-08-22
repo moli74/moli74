@@ -1,0 +1,13 @@
+if (color != "white")
+        misc_button->setStyleSheet("QPushButton { background-color : " + color + "; "\
+            "color : white;"\
+            "border-radius : 2px;"\
+            "border : 2px solid black;"\
+            "font : 15px;}");
+    else
+        misc_button->setStyleSheet("QPushButton { background-color : " + color + "; "\
+            "color : black;"\
+            "border-radius : 2px;"\
+            "border : 2px solid black;"\
+            "font : 15px;}");
+}
